@@ -1,0 +1,47 @@
+/*
+* Bootstrap overrides https://v4-alpha.getbootstrap.com/getting-started/options/
+* All values defined in bootstrap source
+* https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss can be overwritten here
+* Make sure not to add !default to values here
+*/
+$danger: #D71A21; //error
+$warning: #F2994A; //warning
+$secondary: #464646; //secondary-dark
+$dark: #000000; //secondary-dark
+$light: #ffffff; //secondary-dark
+//my colors
+$primary-green: #007664;
+$primary-brown: #BA9742;
+$secondary-blue: #1C304C;
+$secondary-grey: #F8F8F8;
+@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "primary-green": $primary-green,
+  "primary-brown": $primary-brown,
+  "secondary-blue": $secondary-blue,
+  "secondary-grey": $secondary-grey,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// Options:
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+// Components:
+// Define common padding and border radius sizes and more.
+
+$border-radius: 0.15rem;
+$border-radius-lg: 0.125rem;
+$border-radius-sm: 0.1rem;
+
+// Body:
+// Settings for the `<body>` element.
+
+$body-bg: #ffffff;
